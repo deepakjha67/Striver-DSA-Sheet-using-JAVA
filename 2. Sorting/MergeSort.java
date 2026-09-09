@@ -37,6 +37,7 @@ public class MergeSort {
             }
         }
 
+        
         // Copy remaining elements of left half (if any)
         while (left <= mid) {
             temp.add(arr[left]);

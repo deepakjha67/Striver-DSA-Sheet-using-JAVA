@@ -4,7 +4,6 @@ class Solution {
     public int fib(int n) {
         return fibRec(n);  
     }
-
     private int fibRec(int n) {
         if (n <= 1) {
             return n;
