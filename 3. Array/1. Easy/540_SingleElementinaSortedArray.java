@@ -4,6 +4,8 @@
 // TC : O(n^2)
 // SC : O(1)
 
+import java.util.HashMap;
+
 class Solution1 {
     public int singleNonDuplicate(int[] nums) {
 
@@ -67,7 +69,26 @@ class Solution2 {
 }
 
 // Approach 3 (Map DS)For negative numbers also :
-// Will be added later
+class Solution3 {
+    public int firstNonRepeating(int[] arr) {
+        // code here
+        HashMap<Integer, Integer> map = new HashMap<>();
+        
+        for(int num: arr){
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+
+        for(int num: arr){
+            if(map.get(num) == 1){
+                return num;
+            }
+
+        }
+        return 0;
+
+    }
+}
+
 
 
 // Approach 4 (xor) Optimal :
