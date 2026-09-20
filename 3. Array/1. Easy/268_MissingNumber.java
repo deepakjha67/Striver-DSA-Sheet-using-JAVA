@@ -19,7 +19,6 @@ class Solution1 {
         return sum;
     }
 }
-
 // Approach 2 (SUM) :
 // TC : O(n)
 // SC: O(1)
