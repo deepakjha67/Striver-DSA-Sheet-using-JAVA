@@ -35,27 +35,19 @@ class Solution {
 // SC: O(1)
 class Solution {
     public void moveZeroes(int[] nums) {
-        int j = -1;
         int n = nums.length;
-        for(int i = 0; i < n; i++){           // step 1: find first zero
-            if(nums[i] == 0){
-                j = i;
-                break;
+
+        int zeroPosition = 0;
+        for(int current = 0; current < n; current++){
+            if(nums[current] != 0) {
+                int temp = nums[current];
+                nums[current] = nums[zeroPosition];
+                nums[zeroPosition] = temp;
+
+                zeroPosition++;
             }
         }
 
-        if(j == -1) {                    // no zeros, nothing to do
-            return;
-        }
-
-        for(int i = j +1; i < n; i++){       // step 2: swap non-zeros forward
-            if(nums[i] != 0){
-                int temp = nums[i];
-                nums[i] = nums[j];
-                nums[j] = temp;
-
-                j++;
-            }
-        }
+        
     }
 }
