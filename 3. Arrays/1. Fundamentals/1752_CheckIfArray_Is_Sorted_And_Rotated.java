@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
 
+// TC : O(n)
+// SC : O(n)
 class Solution {
 
     public boolean check(int[] nums) {
