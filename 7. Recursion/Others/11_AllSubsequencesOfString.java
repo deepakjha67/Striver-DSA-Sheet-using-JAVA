@@ -1,4 +1,4 @@
-https://www.geeksforgeeks.org/problems/power-set4302/1
+//www.geeksforgeeks.org/problems/power-set4302/1
 
 class Solution {
     
