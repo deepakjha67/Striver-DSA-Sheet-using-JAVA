@@ -1,10 +1,11 @@
-/*
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+
 
 Brute Force: 
 TC: O(n): We traverse entire array and insert elements into set.
 SC: O(n): Additional space used to store elements in set.
 
-class Solution {
+class Solution1 {
     public int removeDuplicates(int[] nums) {
         HashSet<Integer> seen = new HashSet<>();
         int index = 0;
@@ -20,11 +21,11 @@ class Solution {
         return index;
     }
 }  
-*/
+
 
 // Optimal Solution:
 
-class Solution {
+class Solution2 {
     public int removeDuplicates(int[] nums) {
         int i = 0;
 
