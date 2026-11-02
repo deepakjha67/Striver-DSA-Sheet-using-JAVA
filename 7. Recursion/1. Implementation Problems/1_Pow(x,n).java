@@ -67,7 +67,6 @@ class Solution2 {
         if (n % 2 == 1) {
             result = result * x;
         }
-
         return result;
     }
 }
