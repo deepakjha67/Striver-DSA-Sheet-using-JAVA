@@ -1,7 +1,7 @@
 // https://www.geeksforgeeks.org/problems/remove-all-occurrences-of-a-character-in-a-string/1
 
 class Solution {
-
+    
     public void removeCharacter(StringBuilder s, char c) {
 
         // Start checking the string from index 0
