@@ -1,8 +1,8 @@
 // https://leetcode.com/problems/coin-change-ii/
 
+// TC = O(2^A+N)
+// SC = O(A + N)
 class Solution {
-
-    int n;
 
     public int numberOfWays(int[] coins, int i, int amount) {
 
@@ -12,7 +12,7 @@ class Solution {
         }
 
         // Base case 2: No coins left or amount becomes negative
-        if (i == n || amount < 0) {
+        if (i == coins.length || amount < 0) {
             return 0;
         }
 
@@ -31,7 +31,6 @@ class Solution {
     }
 
     public int change(int amount, int[] coins) {
-        n = coins.length;
 
         return numberOfWays(coins, 0, amount);
     }
