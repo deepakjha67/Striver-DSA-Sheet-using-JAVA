@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/count-good-numbers/description/
+
 class Solution {
 
     static final long MOD = 1000000007;
